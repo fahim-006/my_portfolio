@@ -5,7 +5,6 @@ const aboutMe = [
   "In competitive­ programming, I have displayed my skill in problem-solving on platforms such as Code­forces. This demonstrates my proficie­ncy in handling intricate algorithmic challenges with expertise.",
   "Looking forward, my next goal is to pursue higher education as an MS/PhD student in Computer Science and Engineering at a reputable US university. I am eager to delve deeper into my areas of interest, contribute to cutting-edge research, and continue my journey of lifelong learning.",
   "I bring to the table a blend of hands-on experience, a strong academic foundation, and a passion for pushing the boundaries of what technology can achieve. I am excited about the prospect of contributing to and thriving in the dynamic academic environment of a US university.",
-  "",
 ];
 
 export default aboutMe;

@@ -10,8 +10,8 @@ const Introduction = () => {
     <Container fluid>
       <Row>
         <Col xs={12} md={6} className="d-flex align-items-center">
-          <span className="fs-4">
-            <b class="fs-5">{intro[0]} </b> <br />
+          <span className="fs-5">
+            <b class="fs-4">{intro[0]} </b> <br />
             {intro[1]}
           </span>
         </Col>

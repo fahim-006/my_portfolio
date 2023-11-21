@@ -11,7 +11,7 @@ const WorkExperience = [
       "work on CloudFront, S3 bucket",
       "Migrate WordPress websites to AWS",
       "PostgreSQL, mySQL",
-      "work on vuejs project",
+      "worked on vuejs project",
     ],
   },
 
