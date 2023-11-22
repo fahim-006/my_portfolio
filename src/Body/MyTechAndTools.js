@@ -1,9 +1,11 @@
 import { Container, Row } from "react-bootstrap";
 import TechandTools from "../data/TechandTools";
+import My_expertise_AI from "../data/My_expertise/My_expertise_AI";
+import MyExpertiseCS from "../data/My_expertise/MyExpertiseCS";
 
 const MyTechAndTools = () => {
   return (
-    <Container style={{ marginTop: "20px" }}>
+    <Container id="techandtools" style={{ marginTop: "20px" }}>
       <Row>
         <p className="h3">Tech and Tools</p>
       </Row>
@@ -27,7 +29,6 @@ const MyTechAndTools = () => {
             {TechandTools.programmingLanguage[4]}
           </button>
         </p>
-
         <p className="h5" style={{ textAlign: "left" }}>
           Libraries:
           <button type="button" class="btn btn-light">
@@ -37,7 +38,6 @@ const MyTechAndTools = () => {
             {TechandTools.Libraries[1]}
           </button>
         </p>
-
         <p className="h5" style={{ textAlign: "left" }}>
           Database:
           <button type="button" class="btn btn-light">
@@ -50,7 +50,6 @@ const MyTechAndTools = () => {
             {TechandTools.Database[2]}
           </button>
         </p>
-
         <p className="h5" style={{ textAlign: "left" }}>
           Frontend:
           <button type="button" class="btn btn-light">
@@ -63,7 +62,6 @@ const MyTechAndTools = () => {
             {TechandTools.Frontend[2]}
           </button>
         </p>
-
         <p className="h5" style={{ textAlign: "left" }}>
           Backend:
           <button type="button" class="btn btn-light">
@@ -73,7 +71,6 @@ const MyTechAndTools = () => {
             {TechandTools.Backend[1]}
           </button>
         </p>
-
         <p className="h5" style={{ textAlign: "left" }}>
           AWS:
           <button type="button" class="btn btn-light">
@@ -113,6 +110,73 @@ const MyTechAndTools = () => {
             {TechandTools.AWS[11]}
           </button>
         </p>
+        {My_expertise_AI.map((item, index) => (
+          <p key={index} className="h5" style={{ textAlign: "left" }}>
+            {item.Category} {item.Algorithms.AlgoName}:
+            {item.Algorithms.details.map((detail, detailIndex) => (
+              <>
+                <p className="fs-5" style={{ textDecoration: "underline" }}>
+                  {detail.Name}{" "}
+                  <span style={{ fontSize: "16px" }}>
+                    {detail.Description}-{" "}
+                  </span>
+                  {detail.Algos.map((algos, index2) => (
+                    <button type="button" class="btn btn-light">
+                      {algos}
+                    </button>
+                  ))}
+                </p>
+              </>
+            ))}
+          </p>
+        ))}
+
+        {MyExpertiseCS.map((item, index) => (
+          <p key={index} className="h5" style={{ textAlign: "left" }}>
+            {item.Category} {item.Algorithms.AlgoName}:
+            {item.Algorithms.details.map((detail, detailIndex) => (
+              <>
+                <p className="fs-5" style={{ textDecoration: "underline" }}>
+                  {detail.Name}{" "}
+                  <span style={{ fontSize: "16px" }}>
+                    {detail.Description}-{" "}
+                  </span>
+                  {detail.Algos.map((algos, index2) => (
+                    <button type="button" class="btn btn-light">
+                      {algos}
+                    </button>
+                  ))}
+                  <br />
+                  {detail.LifeCycle.length > 0 ? (
+                    <span className="fs-5">LifeCycle: </span>
+                  ) : (
+                    ""
+                  )}
+                  {detail.LifeCycle.length > 0
+                    ? detail.LifeCycle.map((lifeCycle, index2) => (
+                        <button type="button" class="btn btn-light">
+                          {lifeCycle}
+                        </button>
+                      ))
+                    : ""}
+                  <br />
+                  {detail.Tools.length > 0 ? (
+                    <span className="fs-5">Tools: </span>
+                  ) : (
+                    ""
+                  )}
+                  {detail.Tools.length > 0
+                    ? detail.Tools.map((tools, index3) => (
+                        <button type="button" class="btn btn-light">
+                          {tools}
+                        </button>
+                      ))
+                    : ""}
+                </p>
+              </>
+            ))}
+          </p>
+        ))}
       </Row>
     </Container>
   );

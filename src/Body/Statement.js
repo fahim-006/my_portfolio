@@ -4,9 +4,9 @@ import statement from "../data/myStatement.js";
 
 const Statement = () => {
   return (
-    <Container className="mt-3" fluid>
+    <Container id="myStatement" className="mt-3">
       <Row>
-        <p class="h3">My Statement</p>
+        <p className="h3">My Statement</p>
       </Row>
       <Row className="mt-2 fs-5" style={{ textAlign: "left" }}>
         {statement.paragraph1}

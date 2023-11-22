@@ -2,33 +2,174 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { Link } from "react-scroll";
 
 const Header = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary fixed-top">
       <Container>
-        <Navbar.Brand href="#home">Mashrur Portfolio</Navbar.Brand>
+        <Navbar.Brand>
+          <Link
+            className="mt-2"
+            to="introduction"
+            style={{
+              textDecoration: "none",
+              cursor: "pointer",
+              color: "black",
+            }}
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={0}
+          >
+            Mashrur Portfolio
+          </Link>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Statement</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link>
+              <Link
+                className="mt-2"
+                to="aboutme"
+                style={{
+                  textDecoration: "none",
+                  cursor: "pointer",
+                  color: "black",
+                }}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={0}
+              >
+                About Me
+              </Link>
+            </Nav.Link>
+
+            <Nav.Link>
+              <Link
+                className="mt-2"
+                to="researchInterest"
+                style={{
+                  textDecoration: "none",
+                  cursor: "pointer",
+                  color: "black",
+                }}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={0}
+              >
+                Research Interest
+              </Link>
+            </Nav.Link>
+
+            <Nav.Link>
+              <Link
+                className="mt-2"
+                to="mypublications"
+                style={{
+                  textDecoration: "none",
+                  cursor: "pointer",
+                  color: "black",
+                }}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={0}
+              >
+                My Publications
+              </Link>
+            </Nav.Link>
+
+            <Nav.Link>
+              <Link
+                className="mt-2"
+                to="techandtools"
+                style={{
+                  textDecoration: "none",
+                  cursor: "pointer",
+                  color: "black",
+                }}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={0}
+              >
+                My Expertise
+              </Link>
+            </Nav.Link>
+
+            <Nav.Link>
+              <Link
+                className="mt-2"
+                to="workExperience"
+                style={{
+                  textDecoration: "none",
+                  cursor: "pointer",
+                  color: "black",
+                }}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={0}
+              >
+                Work Experience
+              </Link>
+            </Nav.Link>
+
+            <Nav.Link>
+              <Link
+                className="mt-2"
+                to="education"
+                style={{
+                  textDecoration: "none",
+                  cursor: "pointer",
+                  color: "black",
+                }}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={0}
+              >
+                Education
+              </Link>
+            </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
+            <Nav.Link>
+              <Link
+                className="mt-2"
+                to="myStatement"
+                style={{
+                  textDecoration: "none",
+                  cursor: "pointer",
+                  color: "black",
+                }}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={0}
+              >
+                My Statement
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                className="mt-2"
+                to="myContactInfo"
+                style={{
+                  textDecoration: "none",
+                  cursor: "pointer",
+                  color: "black",
+                }}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={0}
+              >
+                Contact Me
+              </Link>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

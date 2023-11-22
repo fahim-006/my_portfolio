@@ -6,7 +6,7 @@ import { Col } from "react-bootstrap";
 
 const MyWorkExperience = () => {
   return (
-    <Container style={{ marginTop: "20px" }}>
+    <Container id="workExperience">
       <Row>
         <p className="h3">Work Experience</p>
       </Row>

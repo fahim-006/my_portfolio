@@ -6,7 +6,7 @@ import publications from "../data/Publications";
 
 const MyResearch = () => {
   return (
-    <Container style={{ marginTop: "50px" }}>
+    <Container id="mypublications" style={{ marginTop: "50px" }}>
       <Row>
         <p class="h3">My Publications</p>
       </Row>

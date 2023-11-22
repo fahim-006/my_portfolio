@@ -5,7 +5,7 @@ import aboutMe from "../data/aboutMe";
 
 const AboutMe = () => {
   return (
-    <Container style={{ marginTop: "20px" }} fluid>
+    <Container id="aboutme" style={{ marginTop: "20px" }} fluid>
       <Row>
         <p class="h3">About Me</p>
       </Row>
