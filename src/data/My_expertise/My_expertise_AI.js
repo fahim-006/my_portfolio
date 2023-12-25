@@ -47,26 +47,6 @@ const My_expertise_AI = [
       ],
     },
   },
-  {
-    Category: 'Computer Vision Techniques',
-    Algorithms: {
-      details: [
-        {
-          Algos: [
-            'Image classification',
-            'object detection',
-            'image segmentation',
-            'Feature extraction',
-            'Feature extraction',
-            'facial landmark detection',
-            'Optical character recognition (OCR)',
-            'pose estimation',
-            'Medical Image Analysis',
-          ],
-        },
-      ],
-    },
-  },
 
   {
     Algorithms: {
