@@ -1,17 +1,17 @@
-import { Container, Row } from "react-bootstrap";
-import TechandTools from "../data/TechandTools";
-import My_expertise_AI from "../data/My_expertise/My_expertise_AI";
-import MyExpertiseCS from "../data/My_expertise/MyExpertiseCS";
+import { Container, Row } from 'react-bootstrap';
+import TechandTools from '../data/TechandTools';
+import My_expertise_AI from '../data/My_expertise/My_expertise_AI';
+import MyExpertiseCS from '../data/My_expertise/MyExpertiseCS';
 
 const MyTechAndTools = () => {
   return (
-    <Container id="techandtools" style={{ marginTop: "20px" }}>
+    <Container id="techandtools" style={{ marginTop: '20px' }}>
       <Row>
         <p className="h3">Tech and Tools</p>
       </Row>
 
       <Row>
-        <p className="h5" style={{ textAlign: "left" }}>
+        <p className="h5" style={{ textAlign: 'left' }}>
           Programming Languages:
           <button type="button" class="btn btn-light">
             {TechandTools.programmingLanguage[0]}
@@ -29,7 +29,7 @@ const MyTechAndTools = () => {
             {TechandTools.programmingLanguage[4]}
           </button>
         </p>
-        <p className="h5" style={{ textAlign: "left" }}>
+        <p className="h5" style={{ textAlign: 'left' }}>
           Libraries:
           <button type="button" class="btn btn-light">
             {TechandTools.Libraries[0]}
@@ -38,7 +38,7 @@ const MyTechAndTools = () => {
             {TechandTools.Libraries[1]}
           </button>
         </p>
-        <p className="h5" style={{ textAlign: "left" }}>
+        <p className="h5" style={{ textAlign: 'left' }}>
           Database:
           <button type="button" class="btn btn-light">
             {TechandTools.Database[0]}
@@ -50,7 +50,7 @@ const MyTechAndTools = () => {
             {TechandTools.Database[2]}
           </button>
         </p>
-        <p className="h5" style={{ textAlign: "left" }}>
+        <p className="h5" style={{ textAlign: 'left' }}>
           Frontend:
           <button type="button" class="btn btn-light">
             {TechandTools.Frontend[0]}
@@ -62,7 +62,7 @@ const MyTechAndTools = () => {
             {TechandTools.Frontend[2]}
           </button>
         </p>
-        <p className="h5" style={{ textAlign: "left" }}>
+        <p className="h5" style={{ textAlign: 'left' }}>
           Backend:
           <button type="button" class="btn btn-light">
             {TechandTools.Backend[0]}
@@ -71,7 +71,7 @@ const MyTechAndTools = () => {
             {TechandTools.Backend[1]}
           </button>
         </p>
-        <p className="h5" style={{ textAlign: "left" }}>
+        <p className="h5" style={{ textAlign: 'left' }}>
           AWS:
           <button type="button" class="btn btn-light">
             {TechandTools.AWS[0]}
@@ -111,14 +111,14 @@ const MyTechAndTools = () => {
           </button>
         </p>
         {My_expertise_AI.map((item, index) => (
-          <p key={index} className="h5" style={{ textAlign: "left" }}>
-            {item.Category} {item.Algorithms.AlgoName}:
+          <p key={index} className="h5" style={{ textAlign: 'left' }}>
+            {item.Category} {item.Algorithms.AlgoName}
             {item.Algorithms.details.map((detail, detailIndex) => (
               <>
-                <p className="fs-5" style={{ textDecoration: "underline" }}>
-                  {detail.Name}{" "}
-                  <span style={{ fontSize: "16px" }}>
-                    {detail.Description}-{" "}
+                <p className="fs-5" style={{ textDecoration: 'underline' }}>
+                  {detail.Name}{' '}
+                  <span style={{ fontSize: '16px' }}>
+                    {detail.Description}-{' '}
                   </span>
                   {detail.Algos.map((algos, index2) => (
                     <button type="button" class="btn btn-light">
@@ -132,14 +132,14 @@ const MyTechAndTools = () => {
         ))}
 
         {MyExpertiseCS.map((item, index) => (
-          <p key={index} className="h5" style={{ textAlign: "left" }}>
-            {item.Category} {item.Algorithms.AlgoName}:
+          <p key={index} className="h5" style={{ textAlign: 'left' }}>
+            {item.Category} {item.Algorithms.AlgoName}
             {item.Algorithms.details.map((detail, detailIndex) => (
               <>
-                <p className="fs-5" style={{ textDecoration: "underline" }}>
-                  {detail.Name}{" "}
-                  <span style={{ fontSize: "16px" }}>
-                    {detail.Description}-{" "}
+                <p className="fs-5" style={{ textDecoration: 'underline' }}>
+                  {detail.Name}{' '}
+                  <span style={{ fontSize: '16px' }}>
+                    {detail.Description}-{' '}
                   </span>
                   {detail.Algos.map((algos, index2) => (
                     <button type="button" class="btn btn-light">
@@ -150,7 +150,7 @@ const MyTechAndTools = () => {
                   {detail.LifeCycle.length > 0 ? (
                     <span className="fs-5">LifeCycle: </span>
                   ) : (
-                    ""
+                    ''
                   )}
                   {detail.LifeCycle.length > 0
                     ? detail.LifeCycle.map((lifeCycle, index2) => (
@@ -158,12 +158,12 @@ const MyTechAndTools = () => {
                           {lifeCycle}
                         </button>
                       ))
-                    : ""}
+                    : ''}
                   <br />
                   {detail.Tools.length > 0 ? (
                     <span className="fs-5">Tools: </span>
                   ) : (
-                    ""
+                    ''
                   )}
                   {detail.Tools.length > 0
                     ? detail.Tools.map((tools, index3) => (
@@ -171,7 +171,7 @@ const MyTechAndTools = () => {
                           {tools}
                         </button>
                       ))
-                    : ""}
+                    : ''}
                 </p>
               </>
             ))}

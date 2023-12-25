@@ -1,24 +1,42 @@
 const ResearchInterest = {
   Statement:
-    "Deep learning, machine learning, image processing, and biomedical computing are interdisciplinary fields in which I have a strong interest and level of experience. My area of interest is the nexus between cutting-edge computational methods and how to use them to solve problems in biological and healthcare research.",
+    'In my prior position, I actively engaged in web security and specialized in cloud computing, particularly within the AWS environment. During my academic life, I gained extensive knowledge of various machine learning algorithms and acquired hands-on research experience in deep learning, specifically with Convolutional Neural Networks (CNN) and Recurrent Neural Networks (RNN). Currently, I am contemplating pursuing a Masters degree, with a focus on machine learning-based cybersecurity, at a university in the United States.',
 
   details: [
     {
-      name: "Deep Learning and Machine Learning ",
+      name: 'Deep Learning and Machine Learning in Cyberseurity ',
       statement:
-        "My main goal is to use machine learning and deep learning techniques to challenging datasets for valuable insights. My areas of interest are creating new models and methods for pattern recognition, categorization, and predictive analytics.",
+        'Machine Learning (ML), Artificial Intelligence (AI), and Deep Learning (DL) play crucial roles in enhancing cybersecurity capabilities. . I have a special interest in fields like threat and anomaly detection, network and user behaviour analysis, using artificial intelligence (AI) for malware detection and prevention, and investigating adversarial machine learning to defeat adversarial attacks etc.',
     },
 
     {
-      name: "Image Processing",
+      name: 'Application Security',
       statement:
-        "I believe the development of advanced algorithms for computer vision, feature extraction, and analysis of images to be fascinating in the field of image processing. My objective is to aid in the growth of robust methods for image processing that may be used in a variety of fields, with an emphasis on medical imaging. As evidence of my commitment, I have contributed as one of the authors to the paper titled 'Classification of Acute Myeloid Leukemia using Convolutional Neural Network.'",
+        'Web Application Firewalls, Authentication and Authorization,Secure Data Handling, Patch Management',
     },
 
     {
-      name: "Applications in Healthcare",
+      name: 'Network Security',
       statement:
-        "My main objective is to bridge the knowledge gap between research findings and practical applications that directly impact healthcare. Developing intelligent systems specifically suited for illness diagnosis, treatment efficiency, and expanding the field of personalized healthcare are areas in which I am particularly interested.",
+        'Develop advanced techniques for the detection and prevention of intrusions in network traffic, Investigate security issues unique to 5G networks, such as network slicing security, edge computing security, and the implications of increased device connectivity and communication speed, Investigate security issues related to cloud computing, Explore the application of blockchain technology in network security, such as decentralized identity management, secure peer-to-peer communication, and tamper-resistant network logs.',
+    },
+
+    {
+      name: 'Cryptography',
+      statement:
+        'Blockchain technology includes consensus algorithms, cryptographic hashing, digital signatures, and privacy-enhancing techniques like zk-SNARKs (Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge).',
+    },
+
+    {
+      name: 'Big data analytics within the context of cloud computing.',
+      statement:
+        'Research the design and optimization of cloud-based data warehouses to support the storage, investigate the integration of machine learning algorithms with big data analytics in the cloud.',
+    },
+
+    {
+      name: 'Fog Computing',
+      statement:
+        'Investigate security and privacy issues specific to fog computing, such as secure data transmission, access control, and protection against malicious attacks. And, Research methods for performing analytics and machine learning at the edge of the network. ',
     },
   ],
 };

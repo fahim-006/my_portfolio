@@ -1,50 +1,46 @@
 const MyExpertiseCS = [
   {
-    Category: "Software Engineering",
+    Category: 'Software Engineering',
     Algorithms: {
-      AlgoName: "",
+      AlgoName: '',
       details: [
         {
-          Name: "Software Development Methodologies",
-          Description:
-            "are approaches or frameworks that provide structure, guidance, and processes for the development of software systems.",
-          Algos: ["Waterfall Model", "Agile Methodology", "Scrum"],
+          Name: 'Software Development Methodologies',
+          Description: ': ',
+          Algos: ['Waterfall Model', 'Agile Methodology', 'Scrum'],
           LifeCycle: [],
           Tools: [],
         },
 
         {
-          Name: "DevOps",
-          Description:
-            "Short for Development and Operations, is a set of practices, principles, and cultural philosophies aimed at improving collaboration and communication between software development (Dev) and IT operations (Ops) teams.",
+          Name: 'DevOps',
+          Description: ': ',
           Algos: [],
           /*Life-cycle*/
           LifeCycle: [
-            "Plan",
-            "Code",
-            "Build",
-            "Test",
-            "Deploy",
-            "Operate",
-            "Monitor",
+            'Plan',
+            'Code',
+            'Build',
+            'Test',
+            'Deploy',
+            'Operate',
+            'Monitor',
           ],
           Tools: [
-            "Git",
-            "SVN",
-            "Jenkins",
-            "GitLab CI",
-            "Ansible",
-            "Docker",
-            "Kubernetes",
-            "Terraform",
-            "CloudFormation",
+            'Git',
+            'SVN',
+            'Jenkins',
+            'GitLab CI',
+            'Docker',
+            'Kubernetes',
+            'Terraform',
           ],
         },
 
         {
-          Name: "Databases and Information Retrieval" /*Databases and Information Retrieval*/,
-          Description: "",
-          Algos: ["Database Management Systems", "Query Optimization"],
+          Name: 'Databases and Information Retrieval' /*Databases and Information Retrieval*/,
+          Description: '',
+          Algos: ['Database Management Systems', 'Query Optimization'],
           LifeCycle: [],
           Tools: [],
         },
