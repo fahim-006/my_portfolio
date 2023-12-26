@@ -6,7 +6,7 @@ const ResearchProject = () => {
   return (
     <Container id="mypublications" style={{ marginTop: '50px' }}>
       <Row>
-        <p className="h3">My Publications</p>
+        <p className="h3">Research Project</p>
       </Row>
       <Row>
         <ListGroup variant="flush" className="list-unstyled">
