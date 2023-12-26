@@ -6,6 +6,7 @@ import MyResearch from './MyResearch';
 import MyResearchInterest from './MyResearchInterest';
 import MyTechAndTools from './MyTechAndTools';
 import MyWorkExperience from './MyWorkExperience';
+import ResearchProject from './ResearchProject';
 import Statement from './Statement';
 
 const MainBody = () => {
@@ -15,6 +16,7 @@ const MainBody = () => {
       <AboutMe />
       <MyWorkExperience />
       <MyResearch />
+      <ResearchProject />
       <MyTechAndTools />
       <MyResearchInterest />
       <MyEducation />
