@@ -14,12 +14,12 @@ const MainBody = () => {
     <div>
       <Introduction />
       <AboutMe />
+      <MyEducation />
       <MyWorkExperience />
       <MyResearch />
       <ResearchProject />
       <MyTechAndTools />
       <MyResearchInterest />
-      <MyEducation />
       <MyContactInfo />
     </div>
   );

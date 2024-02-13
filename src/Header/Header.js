@@ -45,11 +45,10 @@ const Header = () => {
                 About Me
               </Link>
             </Nav.Link>
-
             <Nav.Link>
               <Link
                 className="mt-2"
-                to="researchInterest"
+                to="education"
                 style={{
                   textDecoration: 'none',
                   cursor: 'pointer',
@@ -60,46 +59,9 @@ const Header = () => {
                 offset={-50}
                 duration={0}
               >
-                Research Interest
+                Education
               </Link>
             </Nav.Link>
-
-            <Nav.Link>
-              <Link
-                className="mt-2"
-                to="mypublications"
-                style={{
-                  textDecoration: 'none',
-                  cursor: 'pointer',
-                  color: 'black',
-                }}
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={0}
-              >
-                My Publications
-              </Link>
-            </Nav.Link>
-
-            <Nav.Link>
-              <Link
-                className="mt-2"
-                to="techandtools"
-                style={{
-                  textDecoration: 'none',
-                  cursor: 'pointer',
-                  color: 'black',
-                }}
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={0}
-              >
-                My Expertise
-              </Link>
-            </Nav.Link>
-
             <Nav.Link>
               <Link
                 className="mt-2"
@@ -117,11 +79,10 @@ const Header = () => {
                 Work Experience
               </Link>
             </Nav.Link>
-
             <Nav.Link>
               <Link
                 className="mt-2"
-                to="education"
+                to="mypublications"
                 style={{
                   textDecoration: 'none',
                   cursor: 'pointer',
@@ -132,7 +93,41 @@ const Header = () => {
                 offset={-50}
                 duration={0}
               >
-                Education
+                My Publications
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                className="mt-2"
+                to="techandtools"
+                style={{
+                  textDecoration: 'none',
+                  cursor: 'pointer',
+                  color: 'black',
+                }}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={0}
+              >
+                My Expertise
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                className="mt-2"
+                to="researchInterest"
+                style={{
+                  textDecoration: 'none',
+                  cursor: 'pointer',
+                  color: 'black',
+                }}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={0}
+              >
+                Research Interest
               </Link>
             </Nav.Link>
           </Nav>
