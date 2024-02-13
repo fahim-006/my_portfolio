@@ -4,7 +4,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
 const ResearchProject = () => {
   return (
-    <Container id="mypublications" style={{ marginTop: '50px' }}>
+    <Container id="mypublications" style={{ marginTop: '50px' }} fluid>
       <Row>
         <p className="h3">Research Project</p>
       </Row>
@@ -14,7 +14,7 @@ const ResearchProject = () => {
             <p className="fs-4">
               E-Commerce Trend and Disclosure of Personal Data in Bangladesh.
             </p>
-            <Row className="mt-2" style={{ textAlign: 'left' }}>
+            <Row className="mt-2" style={{ textAlign: 'justify' }}>
               The security concern for personal information on e-commerce sites
               is an important research field. Due to the rapid growth of online
               marketing and purchasing, data collection about customer’s

@@ -1,12 +1,12 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import ListGroup from "react-bootstrap/ListGroup";
-import { Link } from "react-router-dom";
-import publications from "../data/Publications";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import ListGroup from 'react-bootstrap/ListGroup';
+import { Link } from 'react-router-dom';
+import publications from '../data/Publications';
 
 const MyResearch = () => {
   return (
-    <Container id="mypublications" style={{ marginTop: "50px" }}>
+    <Container id="mypublications" style={{ marginTop: '50px' }} fluid>
       <Row>
         <p class="h3">My Publications</p>
       </Row>
@@ -16,7 +16,7 @@ const MyResearch = () => {
             <Link className="fs-4" to={publications[0].Link}>
               {publications[0].Name}
             </Link>
-            <Row className="mt-2" style={{ textAlign: "left" }}>
+            <Row className="mt-2" style={{ textAlign: 'justify' }}>
               {publications[0].Abstract}
             </Row>
           </ListGroup.Item>
@@ -25,7 +25,7 @@ const MyResearch = () => {
             <Link className="fs-4" to={publications[1].Link}>
               {publications[1].Name}
             </Link>
-            <Row className="mt-2" style={{ textAlign: "left" }}>
+            <Row className="mt-2" style={{ textAlign: 'justify' }}>
               {publications[1].Abstract}
             </Row>
           </ListGroup.Item>
@@ -34,7 +34,7 @@ const MyResearch = () => {
             <Link className="fs-4" to={publications[2].Link}>
               {publications[2].Name}
             </Link>
-            <Row className="mt-2" style={{ textAlign: "left" }}>
+            <Row className="mt-2" style={{ textAlign: 'justify' }}>
               {publications[2].Abstract}
             </Row>
           </ListGroup.Item>
